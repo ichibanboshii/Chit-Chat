@@ -1,0 +1,288 @@
+body{
+    /* https://www.color-hex.com/color/d3d3d3 */
+    background:rgba(0,0,0,0.7);  /* fallback for old browsers */
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url("Samuraiwallpaper.jpg") no-repeat center center fixed;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.8)), url("Samuraiwallpaper.jpg") no-repeat center center fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: Bungee Outline;
+    font-weight: 900;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    animation: blur 0.5s ease-out;
+  
+  }
+  *{
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  #title_container{
+    width: 100%;
+    height: 225px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+  #title_inner_container{
+    width: 100%;
+    height: 100%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    /* background-color: #083D77; */
+    border-radius: 200px;
+  }
+  #title{
+    display: inline-block;
+    color: rgb(255, 255, 255);/*EBEBD3, C5283D*/
+    font-size: 55px;
+    letter-spacing: 2px;
+    user-select: none;
+  }
+  
+  #join_container{
+    width: 100%;
+    height: 200px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    float: left;
+    margin-top: 80px;
+  
+  }
+  #join_inner_container{
+    width: 50%;
+    height: 100%;
+  }
+  #join_input_container{
+    width: 100%;
+    height: 50px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    float: left;
+  }
+  #join_input{
+    width: 60%;
+    height: 40px;
+  
+    color: #ffffff;
+    font-family: Varela Round;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
+    border-bottom: 2px dashed #1D3354;
+  
+  }
+  #join_input:focus{
+    box-shadow: 0 10px 30px -17px #ffffff;
+  }
+  #join_button_container{
+    width: 100%;
+    height: 50px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    float: left;
+  }
+  #join_button{
+    width: 60%;
+    height: 40px;
+  
+    font-family: Varela Round;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  
+  #chat_container{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    float: left;
+    margin-top: 40px;
+    /* Fade in container */
+    animation: fadeIn 1s linear;
+  }
+  #chat_inner_container{
+    width: 80%;
+    height: 100%;
+  }
+  #chat_content_container{
+    width: 100%;
+    height: 90%;
+  
+    float: left;
+    overflow-y: auto;
+    font-family: Varela Round;
+  
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #chat_input_container{
+    width: 100%;
+    height: 7%;
+    border-radius: 10px;
+    float: left;
+    border-bottom: 2px dashed #ffffff;
+    background-color: rgb(255, 255, 255);
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: Varela Round;
+    margin-top: 10px;
+  }
+  #chat_input{
+    width: 95%;
+    height: 100%;
+    float: left;
+    background-color: Transparent;
+    color: #000000;
+    font-size: 15px;
+  }
+  #chat_input_send{
+    width: 5%;
+    height: 100%;
+    float: left;
+    font-size: 18px;
+    background-color: Transparent;
+    text-align: right;
+    color: #ccc;
+  }
+  #chat_input_send.enabled{
+    color: #0f38ec;
+    background-color: Transparent;
+    cursor: pointer;
+  
+  }
+  #chat_logout_container{
+    padding: 25px;
+    width: 100%;
+    display: inline-block;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+  }
+  #chat_logout{
+    border-radius: 7px;
+    height: 25px;
+    width: 100px;
+    background-color: #ff1313;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  #chat_logout:hover{
+    text-decoration: underline;
+  }
+  .message_container{
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  .message_inner_container{
+    width: 100%;
+    display: inline-block;
+    color: #ffffff;
+  }
+  .message_user_container{
+    width: 100%;
+    display: inline-block;
+  }
+  .message_user{
+    color: #8795e7;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .message_content_container{
+    width: 100%;
+    display: inline-block;
+  
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  .message_content{
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  
+  .enabled{
+    transition: background-color 0.5s;
+    color: #fff;
+    background-color: #D64045; /*#5B7553;*/
+    cursor: pointer;
+  }
+  #title_container.chat_title_container{
+    transition: 0.8s;
+    transition-timing-function: ease-in-out;
+    height: 100px;
+  }
+  #title.chat_title{
+    transition: 0.8s;
+    font-size: 47px;
+  }
+  .loader_container{
+    width: 100%;
+    height: 100%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  
+    border-top: 6px solid #D64045;
+    border-bottom: 6px solid #1D3354;
+    border-left: 6px solid #E9FFF9;
+    border-right: 6px solid #E9FFF9;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  @keyframes fadeIn {
+     0% {opacity: 0;}
+     100% {opacity: 1;}
+  }
+  @keyframes blur {
+    0% {filter: blur(5px);}
+    100% {}
+  }
+  ::selection {
+    background-color: #D64045;
+    color: #fff;
+  }
+  /* width */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ccc;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #8795e7;
+    border-radius: 5px;
+  }
